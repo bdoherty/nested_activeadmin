@@ -1,7 +1,6 @@
 NestedActiveadmin::Application.routes.draw do
 
   # hack for nested_belongs_to
-#=begin
   namespace :admin do
     resources :continents do
       resources :countries do
@@ -9,7 +8,6 @@ NestedActiveadmin::Application.routes.draw do
       end
     end
   end
-#=end
 
 
   ActiveAdmin.routes(self)
